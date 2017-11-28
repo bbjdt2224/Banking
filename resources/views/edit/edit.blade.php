@@ -19,7 +19,7 @@
 		Date
 		<input type='date' class='form-control' name='date' value="{{$transaction->date}}">
 		Amount
-		<input type='number' class='form-control' name='amount' value="{{$transaction->amount}}">
+		<input type='number' class='form-control' name='amount' step="0.01" value="{{$transaction->amount}}">
 		Catagory
 		<select class='form-control' name='catagory'>
 			@foreach(explode(',', $account->catagories) as $catagory)

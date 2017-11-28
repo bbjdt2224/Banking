@@ -18,7 +18,7 @@
 		Date
 		<input type='date' class='form-control' name='date'>
 		Amount
-		<input type='number' class='form-control' name='amount'>
+		<input type='number' class='form-control' name='amount' step="0.01">
 		Catagory
 		<select class='form-control' name='catagory'>
 			@foreach(explode(',', $account->catagories) as $catagory)
